@@ -1,13 +1,16 @@
-import React from 'react';
-import './Card.css';
+import React, { useState } from 'react';
+import './Counter.css';
 
-function Card() {
+function Counter() {
+  const [counter, setCounter] = useState(0)
+
   return (
-    <div className="Card">
-      <h3>Rick & Morty</h3>
-      <p>Animation</p>
+    <div className="Counter">
+      <h3>{counter}</h3>
+      <button onClick={() => setCounter(counter - 1)}>-</button>
+      <button onClick={() => setCounter(counter + 1)}>+</button>
     </div>
   );
 }
 
-export default Card;
+export default Counter;

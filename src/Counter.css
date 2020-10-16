@@ -1,9 +1,13 @@
-.Card {
+.Counter {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: inline-block;
-  margin: 0 20px 20px 0;
   padding: 5px 20px;
-  width: 200px;
+  text-align: center;
+}
+
+.Counter button {
+  height: 30px;
+  width: 30px;
 }
