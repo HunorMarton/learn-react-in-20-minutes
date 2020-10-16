@@ -1,11 +1,11 @@
 import React from 'react';
 import './Card.css';
 
-function Card() {
+function Card(props) {
   return (
     <div className="Card">
-      <h3>Rick & Morty</h3>
-      <p>Animation</p>
+      <h3>{props.title}</h3>
+      <p>{props.genre}</p>
     </div>
   );
 }
