@@ -1,13 +1,14 @@
 import React from 'react';
-import './Card.css';
+import Card from './Card'
 
-function Card() {
+function App() {
   return (
-    <div className="Card">
-      <h3>Rick & Morty</h3>
-      <p>Animation</p>
+    <div>
+      <h2>Cards</h2>
+      <Card />
+      <Card />
     </div>
   );
 }
 
-export default Card;
+export default App;
