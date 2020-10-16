@@ -12,6 +12,7 @@ function Counter() {
       <h3>{counter}</h3>
       <button onClick={decrease}>-</button>
       <button onClick={increase}>+</button>
+      {counter < 0 && <div>Too low</div>}
     </div>
   );
 }
