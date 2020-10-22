@@ -7,9 +7,11 @@ function Counter() {
   const decrease = () => setCounter(counter - 1)
   const increase = () => setCounter(counter + 1)
 
+  const headerStyle = { color: counter < 0 ? "#1F271B" : "white" }
+
   return (
     <div className="Counter">
-      <h3 style={{ color: counter < 0 ? "#1F271B" : "white" }}>
+      <h3 style={headerStyle}>
         {counter}
       </h3>
       <button onClick={decrease}>-</button>
