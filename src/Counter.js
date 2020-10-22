@@ -7,15 +7,15 @@ function Counter() {
   const decrease = () => setCounter(counter - 1)
   const increase = () => setCounter(counter + 1)
 
-  const headerStyle = { color: counter < 0 ? "#1F271B" : "white" }
-
   return (
     <div className="Counter">
-      <h3 style={headerStyle}>
+      <h3>
         {counter}
       </h3>
+      {counter < 0 && <p>Too low</p>}
       <button onClick={decrease}>-</button>
       <button onClick={increase}>+</button>
+
     </div>
   );
 }
